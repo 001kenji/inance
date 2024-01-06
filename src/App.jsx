@@ -58,15 +58,15 @@ function App() {
 
 
   useEffect(() => {
-    window.innerWidth >768 ? setShownav(true) :''
+    window.innerWidth >1023 ? setShownav(true) :''
   },[])
 
   window.onresize = function() {
-    window.innerWidth >768 ? setShownav(true) :''
+    window.innerWidth >1023 ? setShownav(true) :''
   }
 
   const navstyler = {
-    height : shownav ? window.innerWidth < 769 ?'180px' : '50px' : '0px',
+    height : shownav ? window.innerWidth <= 1023 ?'180px' : '50px' : '0px',
     opacity : shownav ? '100' : '0'
   }
 
@@ -158,8 +158,8 @@ const ToTopStyler ={
         <h1 className=' mx-auto md:text-5xl w-[70%] text-center text-sky-700 text-3xl flex font-semibold'>INANCE</h1>
         <section className='w-[20%] overflow-hidden'>
         <div style={{transform: `translateX(-${navScroller * 100}%)`}} className=' lg:hidden flex flex-row ease-in-out transition-all duration-700 '>
-          <GiHamburgerMenu onClick={() => NavFunc('show')} className=' md:text-3xl hover:animate-ping w-[100%] min-w-[100%]  my-auto text-2xl' />
-          <MdOutlineCancel onClick={() => NavFunc('hide')} className=' md:text-3xl hover:animate-none w-[100%] min-w-[100%]  my-auto text-2xl' />
+          <GiHamburgerMenu onClick={() => NavFunc('show')} className=' cursor-pointer md:text-3xl hover:animate-ping w-[100%] min-w-[100%]  my-auto text-2xl' />
+          <MdOutlineCancel onClick={() => NavFunc('hide')} className=' cursor-pointer md:text-3xl hover:animate-none w-[100%] min-w-[100%]  my-auto text-2xl' />
         </div>
         </section>
       </div>
