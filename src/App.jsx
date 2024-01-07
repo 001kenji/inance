@@ -75,25 +75,25 @@ function App() {
       img : '',
       name :'Jorch Moric',
       rate : 4,
-      description : 'description here'
+      description : 'My experience with INANCE was absolutely first-rate! From the initial scheduling call to the completion of the repairs, everything was professional, efficient, and clear'
     },
     {
       img : '',
       name :'Mattin Morem',
       rate : 3,
-      description : 'description here'
+      description : 'I\'ve used several repair companies before, but INANCE truly stands out. They took the time to understand my concerns and tailor their approach to my specific needs'
     },
     {
       img : '',
       name :'Clack Kent',
       rate : 5,
-      description : 'description here'
+      description : 'INANCE went above and beyond my expectations! Not only did they fix the problem with my [appliance/system] quickly and effectively, but they also identified and addressed a potential future issue I wasn\'t even aware of. Their proactive approach saved me time and money in the long run'
     },
     {
       img : '',
       name :'Lex Pere',
       rate : 4,
-      description : 'description here'
+      description : 'INANCE was friendly, communicative, and even cleaned up their work area before leaving. This company truly values customer satisfaction, and I couldn\'t be happier with their service. A++!'
     }
 
   ] 
@@ -180,7 +180,7 @@ const ToTopStyler ={
    <section id='home-section-container' className='  bg-[url("./assets/images/slider-img.png")]'>
    <div className=' bg-opacity-70   bg-cyan-300 ' id='universal-home-div'>
     <h1 className=' md:text-3xl text-center text-sky-700   font-bold  text-2xl'>Repair and Maintenance Services</h1>
-    <blockquote className=' md:text-xl md:font-semibold'>description here</blockquote>
+    <blockquote className=' md:text-xl md:font-semibold'>Keep your equipment running smoothly and avoid costly breakdowns with our comprehensive repair and maintenance services</blockquote>
     <button className=' md:text-xl hover:bg-black hover:text-blue-500  hover:font-bold hover:text-base md:hover:text-2xl h-fit  min-w-[140px] transition-all duration-500 bg-orange-600 p-3 text-center text-sm font-semibold rounded-sm mx-auto grid align-middle text-slate-50'><p className=' transition-all ease-in-out duration-500 h-full hover:animate-bounce'>Contact Us</p></button>
 
    </div></section>
@@ -204,7 +204,7 @@ const ToTopStyler ={
       <div className=' lg:w-[50%] flex flex-col align-middle gap-2 justify-center text-center'>
         <h1 className=' lg:text-5xl text-center text-black text-3xl font-semibold font-serif'>ABOUT US</h1>
         <blockquote className='lg:text-lg text-slate-500 font-mono text-center'>
-          description here
+        We offer flexible scheduling options and competitive rates to fit your needs.
           </blockquote>
           <button className='lg:min-w-[150px] bg-blue-600  mx-auto p-1 rounded-sm text-center text-slate-50 text-base w-fit min-w-[80px] '>READ MORE</button>
         
@@ -217,7 +217,7 @@ const ToTopStyler ={
    <div id='servicesSect' className=' flex flex-col align-middle gap-2 justify-center text-center'>
       <h1 className='lg:text-3xl md:text-2xl text-black text-2xl font-semibold font-serif'>WE PROVIDE PROFESSIONAL HOME SERVICES</h1>
       <blockquote className=' md:text-lg text-slate-500 font-mono text-center'>
-        description here
+      Say goodbye to honey-do lists and endless DIY projects! We're your one-stop shop for all your home's needs, from plumbing repairs to sparkling clean windows. Our team of expert technicians and friendly handymen is equipped to handle everything, big or small, with efficiency and a smile
         </blockquote>
         <button className=' md:text-lg md:min-w-[200px] bg-blue-600  mx-auto p-1 rounded-sm text-center text-slate-50 text-base w-fit min-w-[80px] '>READ MORE</button>
       
@@ -230,21 +230,24 @@ const ToTopStyler ={
       <img className=' mx-auto' src={mainainImg} alt="" />
       <big className=' text-3xl font-mono text-slate-600'>Maintenance</big>
       <blockquote className=' text-slate-500 font-mono px-2 text-center'>
-        description here
+       
+Sure, here is a three-line paragraph that a company can use to describe their maintenance service:
+
+Keep your equipment running smoothly and avoid costly breakdowns with our comprehensive maintenance service. Our experienced technicians will perform regular inspections
       </blockquote>
     </div>
     <div id='more-Contaienr-div' className=' hover:bg-orange-500 hover:shadow-pink-700 transition-all duration-500 hover:shadow-xl shadow-lg shadow-slate-400  border-[1px] flex flex-col w-full bg-slate-50 h-fit'>
       <img className=' mx-auto' src={electricImg} alt="" />
       <big className=' text-3xl font-mono text-slate-600'>Electrical</big>
       <blockquote className=' text-slate-500 font-mono px-2 text-center'>
-        description here
+      Powering homes and businesses safely and reliably is our top priority. From routine maintenance to emergency repairs, our skilled electricians are equipped to tackle any electrical challenge. 
       </blockquote>
     </div>
     <div id='more-Contaienr-div' className=' hover:bg-orange-500 hover:shadow-pink-700 transition-all duration-500 hover:shadow-xl shadow-lg shadow-slate-400  border-[1px] flex flex-col w-full bg-slate-50 h-fit'>
       <img className=' mx-auto' src={plumbingImg} alt="" />
       <big className=' text-3xl font-mono text-slate-600'>Plumbing</big>
       <blockquote className=' text-slate-500 font-mono px-2 text-center'>
-        description here
+      Clogged drains got you down? Leaks wreaking havoc? Don't stress, just splash! At INANCE, we're your one-stop shop for all things plumbing. From dripping faucets to major pipe repairs, our licensed pros tackle any problem with expertise and a smile. 
       </blockquote>
     </div>
     <div className='w-[100%] flex justify-center'> 
