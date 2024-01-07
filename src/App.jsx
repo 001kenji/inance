@@ -14,6 +14,14 @@ import { FaLongArrowAltLeft } from "react-icons/fa";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 // footer sect icon
+import { FaStar } from "react-icons/fa";
+
+import clientIng1 from './clients/c1.jpg'
+import clientIng2 from './clients/c2.jpg'
+import clientIng3 from './clients/c3.jpg'
+import clientIng4 from './clients/c4.jpg'
+
+
 import { FaLocationDot } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
@@ -58,11 +66,13 @@ function App() {
 
 
   useEffect(() => {
-    window.innerWidth >1023 ? setShownav(true) :''
+    window.innerWidth >1023 ? setShownav(true)  :''
+    window.innerWidth >1023 ? setnavScroller(1)  :''
   },[])
 
   window.onresize = function() {
     window.innerWidth >1023 ? setShownav(true) :''
+    window.innerWidth >1023 ? setnavScroller(1)  :''
   }
 
   const navstyler = {
@@ -72,26 +82,26 @@ function App() {
 
   const clientDB = [
     {
-      img : '',
+      img : clientIng1,
       name :'Jorch Moric',
       rate : 4,
       description : 'My experience with INANCE was absolutely first-rate! From the initial scheduling call to the completion of the repairs, everything was professional, efficient, and clear'
     },
     {
-      img : '',
-      name :'Mattin Morem',
+      img : clientIng2,
+      name :'Mather Morem',
       rate : 3,
       description : 'I\'ve used several repair companies before, but INANCE truly stands out. They took the time to understand my concerns and tailor their approach to my specific needs'
     },
     {
-      img : '',
+      img : clientIng3,
       name :'Clack Kent',
       rate : 5,
       description : 'INANCE went above and beyond my expectations! Not only did they fix the problem with my [appliance/system] quickly and effectively, but they also identified and addressed a potential future issue I wasn\'t even aware of. Their proactive approach saved me time and money in the long run'
     },
     {
-      img : '',
-      name :'Lex Pere',
+      img : clientIng4,
+      name :'Jane Adams',
       rate : 4,
       description : 'INANCE was friendly, communicative, and even cleaned up their work area before leaving. This company truly values customer satisfaction, and I couldn\'t be happier with their service. A++!'
     }
@@ -115,7 +125,7 @@ function App() {
    }
    
    
-   var mapdataimg = DataImg.map((item) => <CiStar className=' md:text-3xl text-center text-lg  text-yellow-500' /> )
+   var mapdataimg = DataImg.map((item) => <FaStar className=' md:text-3xl text-center text-lg  text-yellow-500' /> )
    return(mapdataimg)
   }
   const clientMapper = clientDB.map((details) =>
@@ -226,7 +236,7 @@ const ToTopStyler ={
     <div id='universal-moreInfo-div' className=' w-[100%] lg:flex lg:flex-col py-4 bg-slate-50'>
     <h1 className=' w-[100%] text-black text-2xl font-semibold font-serif text-center'>OUR SERVICES</h1>
 
-    <div id='more-Contaienr-div' className='  hover:bg-orange-500 hover:shadow-pink-700 transition-all duration-500 hover:shadow-xl shadow-lg shadow-slate-400  border-[1px] flex flex-col w-full bg-slate-50 h-fit'>
+    <div id='more-Contaienr-div' className=' min-h-fit  hover:bg-orange-500 hover:shadow-pink-700 transition-all duration-500 hover:shadow-xl shadow-lg shadow-slate-400  border-[1px] flex flex-col w-full bg-slate-50 h-fit'>
       <img className=' mx-auto' src={mainainImg} alt="" />
       <big className=' text-3xl font-mono text-slate-600'>Maintenance</big>
       <blockquote className=' text-slate-500 font-mono px-2 text-center'>

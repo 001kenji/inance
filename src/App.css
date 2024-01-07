@@ -1,3 +1,13 @@
+@font-face {
+  font-family: PoppinsBold;
+  src: url('./assets/fonts/Poppins-Bold.ttf');
+}
+@font-face {
+  font-family: poppinsSemiBold;
+  src: url('./assets/fonts/Poppins-SemiBold.ttf');
+}
+
+
 @media only screen and (max-width: 320px) {
   #top-nav-div {
     display: flex;
@@ -19,7 +29,7 @@
 
   }
   #botton-nav-div h1 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: PoppinsBold;
   }
   #botton-content-nav-div {
     display: flex;
@@ -40,6 +50,9 @@
     
     
     min-height: 400px;
+  }
+  #universal-home-div h1 {
+    font-family: poppinsSemiBold;
   }
   #home-section-container {
     background-position: top;
@@ -63,7 +76,7 @@
     display: flex;
     text-align: center;
     align-items: center;
-    max-height:250px;
+    max-height:fit-content;
     gap: 1rem;
   }
 
@@ -161,7 +174,7 @@
 
   }
   #botton-nav-div h1 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: PoppinsBold;
   }
   #botton-content-nav-div {
     display: flex;
@@ -182,6 +195,9 @@
     
     
     min-height: 400px;
+  }
+  #universal-home-div h1 {
+    font-family: poppinsSemiBold;
   }
   #home-section-container {
     background-position: top;
@@ -205,7 +221,7 @@
     display: flex;
     text-align: center;
     align-items: center;
-    max-height:450px;
+    max-height:fit-content;
     gap: 1rem;
   }
 
@@ -308,7 +324,7 @@
 
   }
   #botton-nav-div h1 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: PoppinsBold;
   }
   #botton-content-nav-div {
     display: flex;
@@ -329,6 +345,9 @@
     
     
     min-height: 520px;
+  }
+  #universal-home-div h1 {
+    font-family: poppinsSemiBold;
   }
   #home-section-container {
     background-position: top;
@@ -352,7 +371,7 @@
     display: flex;
     text-align: center;
     align-items: center;
-    max-height:300px;
+    max-height:fit-content;
     gap: 1rem;
   }
 
@@ -465,7 +484,7 @@
 
   }
   #botton-nav-div h1 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: PoppinsBold;
   }
   #botton-content-nav-div {
     display: flex;
@@ -512,7 +531,7 @@
     display: flex;
     text-align: center;
     align-items: center;
-    max-height:300px;
+    max-height:fit-content;
     gap: 1rem;
   }
 
@@ -631,7 +650,7 @@
 
   }
   #botton-nav-div h1 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: PoppinsBold;
   }
   #botton-content-nav-div {
     display: flex;
@@ -652,6 +671,9 @@
     
     
     min-height: 550px;
+  }
+  #universal-home-div h1 {
+    font-family: PoppinsBold;
   }
   #home-section-container {
     background-position: top;
@@ -678,7 +700,7 @@
     display: flex;
     text-align: center;
     align-items: center;
-    max-height:300px;
+    max-height:fit-content;
     gap: 1rem;
   }
 
